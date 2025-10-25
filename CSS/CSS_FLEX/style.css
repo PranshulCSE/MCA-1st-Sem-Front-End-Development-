@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height:300px;
+    width:400px;
+    border:2px solid black;
+   flex-direction: row;
+   /*FLEX direction m row,column,row reverse,column reverse*/
+    justify-content: center;
+    /*justify content main line k around items ko align krta h*/
+align-items: center;
+    /*align items cross line k around items ko align krta h*/
+    display: flex;
+    gap: 5px;
+    /*gap items k b/w space krta h*/
+    flex-wrap: wrap;
+    /**flex wrap items ko wrap krta h jb space na ho to*/
+}
+.b1{
+    background-color: red;
+    flex-grow: 1;
+    /*available space ko divide krna felx grow means consume krna*/
+}
+.b2{
+    background-color: blue;
+    flex-shrink: 2;
+    /*items ko shrink krta h jb space na ho to*/
+}
+.b3{
+    background-color: green;
+    flex-basis: 150px;
+    /* main axis k around agr row ho to width increase hogi or column ho to height increse hogi */
+}
+.b4{
+    background-color: yellow;
+    align-self: flex-start;
+    /*align self individual item ko align krta h jb align items use na krna ho to*/
+}
+.b5{
+    background-color: purple;
+}
