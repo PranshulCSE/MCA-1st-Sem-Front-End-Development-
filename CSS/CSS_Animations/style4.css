@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    padding:30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px solid ghostwhite;
+    display: flex;
+    justify-content: center;
+}
+.b1{
+height:150px;
+    width:600px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.147);
+    border:2px solid aqua;
+}
+.box{
+    
+ 
+    animation-name: mov;/*Assing a name to animation*/
+    animation-duration: 10s;
+    /*IN How Much tym the animation will be completed*/
+    animation-delay: 2s;/*After how much tym the animation will be start*/
+    animation-iteration-count: infinite;/*Counts the times of animation to be perormed*/
+    animation-timing-function: ease-in;/*in which way animation will be occur*/
+}
+
+   @keyframes mov {
+    from{
+        margin:100%;
+     }
+    to{
+        margin:-70%;
+    }
+   }
