@@ -21,14 +21,7 @@
     border-radius: 5px;
 }
 .b1{
-    box-shadow: 10px 10px blue;
-    /* First 2 arguments are for X & Y axis and giving negative value is for invert   */
-}.b2{
-    box-shadow: 10px 10px 5px ;
-    /* 3rd argument is for  giving blur effect*/
-}.b3{
-    box-shadow: 0px 0px 10px 20px;
-    /* 4th argument is for spread radius */
-}.b4{
-    box-shadow: -5px -5px 10px aqua;
+    box-shadow: 10px 10px 0px 20px blue;
+    /* First 2 arguments are for X & Y axis and giving negative value is for invert 3rd one is for 
+    blur effect & 4th one is radius   */
 }
