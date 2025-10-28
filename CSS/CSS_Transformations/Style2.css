@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-color: rgba(11, 11, 11, 0.977);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    perspective: 500px; /*Giving perspective to parent element is mandatory for visualising a 2d element to 3d visual*/
+}
+.box{
+    height: 200px;
+    width:200px;
+    background-color: rgb(190, 244, 226);
+    cursor: pointer;
+    transition: all 3s ease;
+  
+  
+   
+}
+.box:hover{
+    background-color: rgb(51, 0, 255);
+  transform: translateZ(200px);
+}
