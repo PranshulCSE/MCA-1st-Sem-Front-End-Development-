@@ -1,0 +1,32 @@
+.container{
+    height:1000px;
+    width: 1000px;
+    background-color: antiquewhite;
+}
+@media (min-width:319px) and (max-width:480px){
+    /*For Mobile*/
+    .container{
+        background-color: lightsalmon;
+    }
+}
+@media (min-width:481px) and (max-width:1200px){
+    /*For Tablets or I-Pads*/
+
+    .container{
+        background-color: powderblue;
+    }
+}
+@media (min-width:1201px) and (max-width:1600px){
+    /*For Laptops*/
+
+    .container{
+        background-color: limegreen;
+    }
+}
+@media (min-width:1600px){
+    /*For Desktop*/
+
+    .container{
+        background-color: seagreen;
+    }
+}
