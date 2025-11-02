@@ -1,3 +1,1 @@
-function write() {
-            document.getElementById("B1").innerHTML = "Hello I'm Learning JavaScript";
-        }
+console.log("My First Linking of JavaScript with HTML");
