@@ -7,11 +7,11 @@
     height:300px;
     width:400px;
     border:2px solid black;
-   flex-direction: row;
-   /*FLEX direction m row,column,row reverse,column reverse*/
+    flex-direction: row;
+    /*FLEX direction m row,column,row reverse,column reverse*/
     justify-content: center;
     /*justify content main line k around items ko align krta h*/
-align-items: center;
+    align-items: center;
     /*align items cross line k around items ko align krta h*/
     display: flex;
     gap: 5px;
