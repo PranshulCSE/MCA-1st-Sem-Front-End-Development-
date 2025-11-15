@@ -1,3 +1,4 @@
+// How can we pass Arguments into Functions in JavaScript
 function addnum(num1,num2){
     console.log(num1+num2);
 }
