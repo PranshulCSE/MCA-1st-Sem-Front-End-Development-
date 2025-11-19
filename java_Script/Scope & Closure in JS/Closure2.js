@@ -22,3 +22,4 @@ console.log(counter());
 // 4
 // 5
 // 6
+
