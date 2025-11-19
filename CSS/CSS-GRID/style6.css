@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:3rem;
+
+}
+.box{
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b2{
+     grid-column: span 2;
+     background-color: blue;
+     order:1
+}
+.b1{
+   grid-column: span 2;
+
+     background-color: purple;
+}
+.b3{
+   /* grid-column: span 2; */
+
+     background-color: rgb(255, 0, 0);
+}
