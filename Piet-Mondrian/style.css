@@ -1,4 +1,13 @@
 /* 50.6 million */
+.outer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    background-color: #000000;
+}
 .container{
     width: 748px;
     height: 746px;
