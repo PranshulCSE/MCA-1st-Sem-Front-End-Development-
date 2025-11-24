@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM-2</title>
+    <title>Document</title>
 </head>
+
 <body>
-    
+    <div id="main-container" class="container">
+        <h1 class="title">Main Title</h1>
+        <p>This is the first paragraph.</p>
+        <p class="content">This is the second paragraph with a class.</p>
+
+        <ul id="item-list">
+            <li class="item">Item 1</li>
+            <li class="item special">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>
+
+        <form name="login-form" aria-label="Login form">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="Enter username" title="Username">
+        </form>
+    </div>
+
+    <div class="container footer">
+        <p>Footer content.</p>
+    </div>
+    <script>
+        const mainContainer = document.getElementById('main-container');
+        mainContainer.style.border = '2px solid red'; // Puts a red border around the main div
+
+        const itemList = document.getElementById('item-list');
+        console.log(itemList);
+        const allParagraphs = document.getElementsByTagName('p');
+        console.log(allParagraphs.length); // 3
+
+        // You can loop through the collection
+        for (let i = 0; i < allParagraphs.length; i++) {
+            allParagraphs[i].style.fontStyle = 'italic';
+        }
+        const allItems = document.getElementsByClassName('item');
+        console.log(allItems.length); // 3
+
+        // You can also get elements with multiple classes
+        const footerContainer = document.getElementsByClassName('container footer');
+        console.log(footerContainer[0]);
+        // Get the element with the ID 'main-container'
+        const main = document.querySelector('#main-container');
+
+        // Get the FIRST element with the class 'container'
+        const firstContainer = document.querySelector('.container');
+        console.log(firstContainer); // This will be the main div, not the footer
+
+        // Get the FIRST paragraph
+        const firstP = document.querySelector('p');
+        console.log(firstP);
+
+        // Get the list item that has BOTH 'item' and 'special' classes
+        const specialItem = document.querySelector('.item.special');
+        specialItem.style.color = 'orange';
+
+        // Get the input with the name 'username'
+        const usernameInput = document.querySelector('input[name="username"]');
+        // Get ALL elements with the class 'container'
+        const allContainers = document.querySelectorAll('.container');
+        console.log(allContainers.length); // 2
+
+        // Get ALL list items inside the element with the ID 'item-list'
+        const listItems = document.querySelectorAll('#item-list li');
+
+        // A NodeList has a .forEach method, which is very convenient!
+        listItems.forEach(item => {
+            item.style.fontWeight = 'bold';
+        });
+
+    </script>
 </body>
+
 </html>
