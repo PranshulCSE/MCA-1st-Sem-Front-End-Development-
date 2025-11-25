@@ -1,0 +1,40 @@
+.box{
+    height:150px;
+    width:150px;
+    border:2px solid black;
+    border-radius: 50%;
+    border-top: 2px solid red;
+    background-color: rgb(253, 251, 251);
+    animation: loader 5s forwards infinite;
+    position: absolute;
+}
+.a{
+    position: relative;
+    border-top: 10px solid blue;
+    animation: load 8s alternate-reverse infinite;
+}
+/* .a{
+    height:100px;
+    width:100px;
+    border:10px solid black;
+    border-radius: 50%;
+    border-top: 9px solid red;
+    background-color: rgb(253, 251, 251);
+    animation: loader 5s forwards infinite;
+} */
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

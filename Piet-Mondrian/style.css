@@ -6,12 +6,13 @@
 
 }
 body{
-    background-color: #000000;
+    background-color: #dcdcdc;
 }
 .container{
+  
     width: 748px;
     height: 746px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display:grid;
     grid-template-rows: 414px  130px 155px 20px;
     grid-template-columns: 320px 198px 153px 50px;
