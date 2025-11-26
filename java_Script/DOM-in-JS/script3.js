@@ -9,7 +9,6 @@ const unorderElement = document.getElementById("listing");
 //     const list = document.createElement("li");
 //     list.textContent = food;
 //     unorderElement.append(list);
-
 // }
 
 
