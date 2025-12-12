@@ -1,5 +1,4 @@
-fetch("https://api.github.com/users")
-.then((response)=>{
+fetch("https://api.github.com/users").then((response)=>{
     return response.json(); 
 }).then((data)=>{
     const parent=document.getElementById("first");
