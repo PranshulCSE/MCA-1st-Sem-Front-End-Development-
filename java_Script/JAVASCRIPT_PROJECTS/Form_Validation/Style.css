@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.auth-card {
+    background: #fff;
+    width: 350px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* INPUT */
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.auth-card input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102,126,234,0.3);
+}
+
+/* BUTTON */
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-card button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+/* ERROR */
+.error {
+    min-height: 18px;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* SWITCH */
+.switch {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+/* RESPONSIVE */
+@media (max-width: 400px) {
+    .auth-card {
+        width: 90%;
+        padding: 25px;
+    }
+}
+/* ADDITIONAL STYLES FOR SUCCESS MESSAGE */
+.success {
+    min-height: 18px;
+    font-size: 14px;
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* ADDITIONAL STYLES FOR LOADING STATE */
+.auth-card button.loading {
+    background: #ccc;
+    cursor: not-allowed;
+}
+.auth-card button.loading:hover {
+    background: #ccc;
+    transform: none;
+}
+/* STYLES FOR PASSWORD TOGGLE */
+.password-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
