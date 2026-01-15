@@ -1,6 +1,8 @@
+"use strict";
 // If we Dont Assign a Value to a Variable, Typescript will
 // Automatically Assign the 'any' Type to that Variable 
-var randomVariable;
+Object.defineProperty(exports, "__esModule", { value: true });
+let randomVariable;
 randomVariable = 10;
 console.log(typeof randomVariable); // Output: number
 randomVariable = "Hello";
@@ -10,14 +12,15 @@ randomVariable = true;
 console.log(typeof randomVariable);
 // Output: boolean
 // To Avoid this, we can Explicitly Specify the Type of the Variable
-var specificVariable;
+let specificVariable;
 specificVariable = 20;
 console.log(typeof specificVariable); // Output: number
 // specificVariable = "World";
 // Error: Type 'string' is not assignable to type 'number'
 // Tyepscript will automaticly assign the type based on the initial value
-var inferredVariable = 30;
+let inferredVariable = 30;
 console.log(typeof inferredVariable); // Output: number
 inferredVariable = 40; // Valid
 // inferredVariable = "TypeScript";
 // Error: Type 'string' is not assignable to type 'number'
+//# sourceMappingURL=Basic2.js.map
