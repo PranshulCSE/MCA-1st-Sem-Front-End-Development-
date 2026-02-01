@@ -1,12 +1,16 @@
+function app(children){
+const parent=document.getElementById("root");
+    parent.append(children);
+}
 const react={
-create:function (element,styles,content){
-        let elem= document.createElement(element);
-            elem.innertext=content;
-                for(style in styles){
-                        elem.style=[styles]
-                            console.log(styles);
+create:function (tag,styles,content){
+        const element= document.createElement(tag);
+            element.innertext=content;
+                for(let key in styles){
+                    element.style[key]=styles[key];
+                }
+        return element;        
 }
 }
-}
-react.create("h1",{backgroundColor:"black",fontSize:"35px",color:"white"});
-
+const head1=react.create("h1",{backgroundColor:"black",fontSize:"35px",color:"white"});
+app(head1);
