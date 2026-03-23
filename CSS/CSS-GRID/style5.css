@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap:15px;
+
+}
+.box{
+    height: 350px;
+    background-color: purple;
+    color: aliceblue;
+    font-size: 50px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

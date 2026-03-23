@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root{
+    width:400px;
+    height:150px;
+    background-color: rgb(83, 93, 72);
+    color: white;
+    text-align: center;
+}

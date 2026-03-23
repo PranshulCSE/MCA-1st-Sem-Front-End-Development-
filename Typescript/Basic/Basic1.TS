@@ -1,0 +1,10 @@
+let account:number=12511;
+let userName:string="JohnDoe";
+let isLoggedIn:boolean=true;
+let balance:number=2500.75;
+console.log("Account Number:", account);
+console.log("User Name:", userName);
+console.log("Is Logged In:", isLoggedIn);
+console.log("Balance:", balance);
+let transactionHiststory:string[]=["Deposit $500","Withdraw $200","Deposit $1000"];
+console.log("Transaction History:", transactionHistory);

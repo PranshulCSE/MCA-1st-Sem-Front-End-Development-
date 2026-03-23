@@ -1,0 +1,24 @@
+.container{
+
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Grid-template: repeat(2,1fr)/1fr 2fr; */
+}
+.a{
+    background-color: red;
+}
+.b{
+    background-color: yellow;
+}
+.c{
+    background-color: green;
+}
+.d{
+    background-color: blue;
+}
+.e{
+    background-color: cyan;
+}

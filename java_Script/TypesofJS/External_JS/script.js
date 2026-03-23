@@ -1,0 +1,1 @@
+console.log("My First Linking of JavaScript with HTML");

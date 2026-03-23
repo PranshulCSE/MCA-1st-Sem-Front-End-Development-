@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 50px;
+}
+.box{
+    overflow:scroll;
+    /* Overflow has some key values like auto , hidden, visible,scroll etc.*/
+    font-size: 40px;
+    color:rgb(8, 133, 243);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #f77a54;
+    border-radius: 5px;
+}

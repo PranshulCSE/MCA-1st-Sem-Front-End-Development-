@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    padding:30px;
+    position:relative;
+}
+.box{
+    height:200px;
+    width:250px;
+    background-color: orchid;
+    position: absolute;
+    animation-name: moving;/*Assing a name to animation*/
+    animation-duration: 4s;
+    /*IN How Much tym the animation will be completed*/
+    animation-delay: 2s;/*After how much tym the animation will be start*/
+    animation-iteration-count: infinite;/*Counts the times of animation to be perormed*/
+    animation-timing-function: ease-in;/*in which way animation will be occur*/
+    animation-fill-mode: forwards;/*Tell the Behaviour of element*/
+    animation-direction:alternate-reverse;/*in which direction animation will be performed*/
+}
+
+   @keyframes moving {
+    from{
+        background-color: blue;
+        top: 10px;
+        left: 10px;
+    }
+    to{
+       background-color: aqua;
+       top:500px;
+       left:500px;
+    }
+    
+   } 

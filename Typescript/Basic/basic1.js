@@ -1,0 +1,10 @@
+var account = 12511;
+var userName = "JohnDoe";
+var isLoggedIn = true;
+var balance = 2500.75;
+console.log("Account Number:", account);
+console.log("User Name:", userName);
+console.log("Is Logged In:", isLoggedIn);
+console.log("Balance:", balance);
+var transactionHistory = ["Deposit $500", "Withdraw $200", "Deposit $1000"];
+console.log("Transaction History:", transactionHistory);

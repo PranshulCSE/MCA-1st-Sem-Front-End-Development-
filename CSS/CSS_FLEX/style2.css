@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.B1{
+    background-color: Red;
+    height:100px;
+    width:150px;
+    flex-grow: 1;
+}
+.B2{
+    background-color: yellow;
+     height:100px;
+    width:150px;
+}
+.B3{
+    background-color: green;
+     height:100px;
+    width:150px;
+}
+.B4{
+    background-color: blue;
+     height:100px;
+    width:150px;
+}
+.B5{
+    background-color:orange;
+     height:100px;
+    width:150px;
+}
+.B6{
+    background-color:purple;
+     height:100px;
+    width:150px;
+    flex-grow: 1;
+}
+.container{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:10px;
+    /* align-items: center; */
+    
+
+}

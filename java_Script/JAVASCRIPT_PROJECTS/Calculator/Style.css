@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at top, #3a1c1c, #120909);
+}
+
+/* Calculator body */
+.outer {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.3);
+    width: 320px;
+}
+
+/* Display */
+.input input {
+    width: 100%;
+    height: 90px;
+    font-size: 28px;
+    text-align: right;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffa726;
+    outline: none;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+/* General button style */
+.button {
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.6),
+        inset 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* Hover & active */
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Operator buttons */
+#ac, #de, #mod, #div, #mul, #sub, #add, #dot {
+    color: #33ff74;
+    background: linear-gradient(145deg, #1f2f25, #0f1f18);
+}
+
+/* Equal button */
+#eq {
+    background: linear-gradient(145deg, #ffcc33, #ffb300);
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 8px 18px rgba(255, 196, 0, 0.5);
+}
+
+/* Zero buttons slightly wider look */
+#zero, #00 {
+    border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .outer {
+        width: 90%;
+    }
+}

@@ -1,0 +1,33 @@
+div{
+    background-color: aqua;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif; /*Static,relative/absolute,fixed*/
+
+    /* appbrewery.github,io/css-positioning*/
+}
+.box{
+    background-color: rgb(255, 0, 0);
+    height: 100px;
+    width: 150px;
+}
+#stat{
+    position: static;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#rel{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#ab{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+#fx{
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 50px;
+}

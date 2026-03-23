@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    gap: 50px;
+}
+.box{
+    font-size: 40px;
+    color:aliceblue;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #ff3c00;
+    border-radius: 5px;
+}
+
+.b1{
+    box-shadow:  inset 10px 10px 5px blue;
+}
+.b2{
+    box-shadow:  inset -10px -10px 5px blue;
+}

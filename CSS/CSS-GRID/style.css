@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 10px;
+     padding:10px;
+     width:330px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
+}
+.box{
+    border:2px solid black;
+    height:150px;
+    width:150px;
+
+}
+.B1{
+    background-color: red;
+}
+.B2{
+    background-color: blue;
+}
+.B3{
+    background-color: green;
+}
+.B4{
+    background-color: yellow;
+}

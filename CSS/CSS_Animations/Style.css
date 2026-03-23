@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    padding:30px;
+    position:relative;
+}
+.box{
+    height:200px;
+    width:250px;
+    background-color: orchid;
+    position: absolute;
+    animation-name: moving;/*Assing a name to animation*/
+    animation-duration: 4s;/*IN How Much tym the animation will be completed*/
+    }
+
+   @keyframes moving {
+    from{
+        background-color: blue;
+    }
+    to{
+background-color: aqua;
+    }
+    
+   } 

@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: lightgray;
+}
+.btn{
+    width:150px;
+    height:150px;
+    margin:10px;
+    border: 2px solid black;
+    cursor:pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#purple{
+    background-color: purple;
+}

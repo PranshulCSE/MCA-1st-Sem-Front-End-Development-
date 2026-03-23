@@ -1,0 +1,99 @@
+<!-- Create a usable Card component with image overlay & Gradient Background using CSS Components -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            height: 100vh;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .card-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #ff7e5f, #feb47b);
+            height: 70%;
+            width: 100%;
+        }
+
+        img {
+            border-radius: 10px;
+            height: 90%;
+            width: 90%;
+            object-fit: fill;
+        }
+
+        .card-content {
+            background: radial-gradient(circle, #e24883, #000000);
+            height: 30%;
+            width: 100%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: rgb(0, 205, 133);
+            /* margin-bottom: 10px; */
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 800;
+            text-align: center;
+            padding: 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="https://cdn.pixabay.com/photo/2023/05/27/08/20/headphones-8021022_1280.jpg" alt="Headphones">
+        </div>
+        <div class="card-content">
+            <h2 class="card-title">Headphones</h2>
+            <h3>$199</h3>
+            <p class="card-description">OnePlus Nord 3r with awesome Bass & Sound Quality</p>
+            <button class="card-button">Buy Now</button></p>
+        </div>
+    </div>
+</body>
+
+</html>

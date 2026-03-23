@@ -1,0 +1,14 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "First of All you have to install npm in the directory\r command is: \r npm init -y",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

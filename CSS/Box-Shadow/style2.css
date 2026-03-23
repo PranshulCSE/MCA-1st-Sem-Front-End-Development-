@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    gap: 50px;
+}
+.box{
+    font-size: 40px;
+    color:aliceblue;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #ff3c00;
+    border-radius: 5px;
+}
+.b1{
+    box-shadow: 10px 10px 0px 20px blue;
+    /* First 2 arguments are for X & Y axis and giving negative value is for invert 3rd one is for 
+    blur effect & 4th one is radius   */
+}

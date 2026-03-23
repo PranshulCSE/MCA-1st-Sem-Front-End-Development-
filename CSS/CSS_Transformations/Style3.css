@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-color: rgba(11, 11, 11, 0.977);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+   
+}
+.box{
+    height:250px;
+    width:250px;
+    font-size: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 20px rgb(242, 179, 6);
+    background-color: orangered;
+    position: relative;
+  
+    animation-name: sun2;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  /* transform: translate(-50%,-50%);*/
+}
+
+ @keyframes sun2 {
+    from{ box-shadow: 0px 0px 5px 10px rgb(242, 179, 6) ;}
+       
+    to{
+         box-shadow: 0px 0px 15px 20px rgb(242, 179, 6) ;
+     }
+    
+ }
+ .Earth{
+    position: absolute;
+    height:150px;
+    width:150px;
+    font-size: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 20px rgb(242, 179, 6);
+    background-color: rgb(89, 0, 255);
+    animation-name: Earth;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+
+ }
+ @keyframes Earth {
+    from{
+          transform: rotate(0deg) translatex(250px);
+           box-shadow: 0px 0px 5px 10px rgba(6, 148, 242, 0.618);
+    }
+    to{
+  transform: rotate(360deg)  translatex(250px);
+   box-shadow: 0px 0px 5px 10px rgba(6, 148, 242, 0.99)
+    }
+    
+ }
